@@ -11,7 +11,9 @@ import './css/style.scss';
 import NotFound from './_404';
 import Dashboard from './pages/Dashboard';
 import Transactions from './pages/Transactions';
-import FUelInventory from './pages/FuelInventory';
+import FuelInventory from './pages/FuelInventory';
+import EventViewer from './pages/EventViewer';
+import Users from './pages/Users';
 
 function App() {
 
@@ -29,7 +31,9 @@ function App() {
         <Route exact path="*" element={<NotFound />} />
         <Route exact path="/" element={<Dashboard />} />
         <Route exact path="/transactions" element={<Transactions />} />
-        <Route exact path="/fuel-inventory" element={<FUelInventory />} />
+        <Route exact path="/fuel-inventory" element={<FuelInventory />} />
+        <Route exact path="/event-viewer" element={<EventViewer />} />
+        <Route exact path="/account/users" element={<Users />} />
       </Routes>
     </>
   );
